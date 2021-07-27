@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>appendChild</title>
+</head>
+<body>
+    <ul id="myList">
+        <li class="listItem">One</li>
+    </ul>
+
+
+    <script>
+        // All myList
+        let myList = document.getElementById('myList');
+
+        // yangi nitta element qoshish
+        // let newListItem = document.createElement('li');
+        // newListItem.textContent = 'two';
+        // myList.appendChild(newListItem);
+
+        let anotherElements = ['three', 'four', 'five', 'six', 'seven'];
+
+        for( let anotherElement of anotherElements){
+            let newListItem = document.createElement('li');
+            newListItem.textContent = anotherElement;
+
+            myList.appendChild(newListItem);
+        }
+
+    </script>
+</body>
+</html>
